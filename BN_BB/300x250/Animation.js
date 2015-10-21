@@ -60,15 +60,20 @@ home_animation = (function() {
 		TweenLite.to(wire, 1, {top:300, rotation:-90, delay:0.1});
 
 		// slide in blur
-		TweenLite.to(black_headphone_2, 0.3, {left:-98, delay:0,  ease: Expo.easeOut  });
-		TweenLite.to(black_headphone_2, 0.1, {opacity:1, left:-98, delay:0.2,  ease: Expo.easeOut });
+		TweenLite.to(black_headphone_2, 0.3, {left:-98, delay:0.1,  ease: Expo.easeOut });
+		TweenLite.to(black_headphone_2, 0.3, {opacity:1, left:-98, delay:0.1,  ease: Expo.easeOut });
+		//TweenLite.to(black_headphone_3, 0.3, {opacity:1, left:-98, delay:0.1,  ease: Expo.easeOut });
+
 
 		// Flip 
 		TweenLite.to(black_headphone_2, 1, {rotationY:180, left:0, delay:0.2, ease: Expo.easeOut });	
-		TweenLite.to(black_headphone_1, 1, {rotationY:180, left:0, delay:0.3, ease: Expo.easeOut });	
+		//TweenLite.to(black_headphone_3, 1, {rotationY:180, opacity:1, left:0, delay:0.2, ease: Expo.easeOut });	
+
+
+		TweenLite.to(black_headphone_1, 1, {rotationY:180, left:0, delay:0.2, ease: Expo.easeOut });	
 
 		TweenLite.to(black_headphone_2, 0.3, {opacity:0, delay:0.4 });
-
+		//TweenLite.to(black_headphone_3, 0.3, {opacity:0, delay:0.4 });
 		//TweenLite.to(black_headphone_1, 0, {opacity:0, delay:0.2, overwrite:"none"});
 
 
