@@ -55,12 +55,21 @@ home_animation = (function() {
 	function frame1()
 	{
 		// slide in
-		TweenLite.to(black_headphone_1, 0.3, {left:-98, delay:0});	
+		TweenLite.to(black_headphone_1, 0.3, {left:-98, delay:0 });	
 		TweenLite.to(wire, 0.3, {left:-98, delay:0});	
 		TweenLite.to(wire, 1, {top:300, rotation:-90, delay:0.1});
 
-		// spin
-		TweenLite.to(black_headphone_1, 0.1, {opaicty:0, delay:0});	
+		// slide in blur
+		TweenLite.to(black_headphone_2, 0.3, {left:-98, delay:0,  ease: Expo.easeOut  });
+		TweenLite.to(black_headphone_2, 0.1, {opacity:1, left:-98, delay:0.2,  ease: Expo.easeOut });
+
+		// Flip 
+		TweenLite.to(black_headphone_2, 1, {rotationY:180, left:0, delay:0.2, ease: Expo.easeOut });	
+		TweenLite.to(black_headphone_1, 1, {rotationY:180, left:0, delay:0.3, ease: Expo.easeOut });	
+
+		TweenLite.to(black_headphone_2, 0.3, {opacity:0, delay:0.4 });
+
+		//TweenLite.to(black_headphone_1, 0, {opacity:0, delay:0.2, overwrite:"none"});
 
 
 
