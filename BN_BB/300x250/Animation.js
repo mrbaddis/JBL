@@ -43,11 +43,6 @@ home_animation = (function() {
 				Enabler.exit("clickTag1");
 			});
 
-			//TweenLite.to(water_out, 0, {scaleX:0, scaleY:0,});
-
-		TweenLite.to(black_headphone_blur_right, 0, {rotationY:180, delay:0});	
-
-
 
 		frame1();
 
@@ -63,48 +58,16 @@ home_animation = (function() {
 
 
 
-		TweenLite.to(black_headphone_blur_left, 0.1, {opacity:1, rotationY:180,  delay:1.2});	
-		TweenLite.to(black_headphone_1, 0.2, {rotationY:180, left:0, delay:1.3});	
-		TweenLite.to(black_headphone_blur_right, 0.1, {opacity:1, delay:1.2});	
+		//TweenLite.to(black_headphone_blur_left, 0.1, {opacity:1, rotationY:180,  delay:1.2});	
+		//TweenLite.to(black_headphone_1, 0.2, {rotationY:180, left:0, delay:1.3});	
+		//TweenLite.to(black_headphone_blur_right, 0.1, {opacity:1, delay:1.2});	
 
 
-		TweenLite.to(black_headphone_blur_left, 0.1, {opacity:0, delay:1.4});	
+		//TweenLite.to(black_headphone_blur_left, 0.1, {opacity:0, delay:1.4});	
 
 
-
-		//TweenLite.to(black_headphone_1, 2, {left:0, rotationY:180, delay:0, ease: Expo.easeOut});	
-
-
-
-		//TweenLite.to(black_headphone_blur2, 0, {rotationY:180});	
-
-
-		// slide in
-	//	TweenLite.to(black_headphone_1, 0.3, {left:-98, delay:0, ease: Expo.easeOut});	
-
-		//TweenLite.to(wire, 1, {top:300, rotation:-90, delay:.1, ease: Expo.easeOut});
-
-
-
-
-
-		// slide in blur
-		//TweenLite.to(black_headphone_blur, 0.3, {left:-98, delay:0,  ease: Expo.easeOut });
-		//TweenLite.to(black_headphone_blur, 0.3, {opacity:1, delay:0.1,  ease: Expo.easeOut });
-
-
-		// Flip 
+		//TweenLite.delayedCall(0.7, frame2);
 		
-		//TweenLite.to(black_headphone_1, 1, {rotationY:180, left:0, delay:0.1, ease: Expo.easeOut });	
-		/*TweenLite.to(black_headphone_blur, 1, {opacity:1, rotationY:180, left:0, delay:0.2, ease: Expo.easeOut });	
-		TweenLite.to(black_headphone_blur2, 1, {opacity:1, left:0, delay:0.3, ease: Expo.easeOut });	
-
-
-		TweenLite.to(black_headphone_blur, 0.2, {opacity:0, delay:0.4 });
-		TweenLite.to(black_headphone_blur2, 0.2, {opacity:0, delay:0.4 });
-
-		TweenLite.delayedCall(0.7, frame2);
-		*/
 	}
 	
 	function frame2()
@@ -161,26 +124,6 @@ home_animation = (function() {
 
 
 	}
-
-
-
-
-container.onmouseover = function() {
-	if(endFrame == 1)
-	{
- 		//TweenLite.to(buy_now_over, 0.2, {opacity:1});
- 		//TweenLite.to(buy_now, 0.2, {opacity:0});
-	}
-
-}
-
-container.onmouseout = function() {
-	if(endFrame == 1)
-	{	
- 		//TweenLite.to(buy_now_over, 0.2, {opacity:0});
-  		//TweenLite.to(buy_now, 0.2, {opacity:1});
-	}
-}
 
 
 	init();
