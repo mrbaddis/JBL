@@ -61,7 +61,7 @@ home_animation = (function() {
 
 		TweenLite.to(black_headphone_blur_right, 0.2, {opacity:1,left:-140, delay: .4});
 		TweenLite.to(black_headphone_blur_left, .1, {opacity:0, delay:.4});
-		TweenLite.to(black_headphone_blur_right, .1, {opacity:0, delay:.5});
+		TweenLite.to(black_headphone_blur_right, .1, {opacity:0, delay:.8});
 
 		TweenLite.to(black_headphone_1, 0, {rotationY:180, left:40, delay:.5});	
 		TweenLite.to(black_headphone_1, .2, {opacity:1,rotationY:180, left:0, delay:.5});	
