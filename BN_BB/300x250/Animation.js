@@ -45,6 +45,9 @@ home_animation = (function() {
 
 			//TweenLite.to(water_out, 0, {scaleX:0, scaleY:0,});
 
+		TweenLite.to(black_headphone_blur_right, 0, {rotationY:180, delay:0});	
+
+
 
 		frame1();
 
@@ -54,46 +57,93 @@ home_animation = (function() {
 		
 	function frame1()
 	{
+
+		TweenLite.to(black_headphone_1, 0.8, {left:-68, delay:0, ease: Expo.easeOut});	
+		TweenLite.to(wire, 0.8, {left:-45, delay:0, ease: Expo.easeOut});	
+
+
+
+		TweenLite.to(black_headphone_blur_left, 0.1, {opacity:1, rotationY:180,  delay:1.2});	
+		TweenLite.to(black_headphone_1, 0.2, {rotationY:180, left:0, delay:1.3});	
+		TweenLite.to(black_headphone_blur_right, 0.1, {opacity:1, delay:1.2});	
+
+
+		TweenLite.to(black_headphone_blur_left, 0.1, {opacity:0, delay:1.4});	
+
+
+
+		//TweenLite.to(black_headphone_1, 2, {left:0, rotationY:180, delay:0, ease: Expo.easeOut});	
+
+
+
+		//TweenLite.to(black_headphone_blur2, 0, {rotationY:180});	
+
+
 		// slide in
-		TweenLite.to(black_headphone_1, 0.3, {left:-98, delay:0 });	
-		TweenLite.to(wire, 0.3, {left:-98, delay:0});	
-		TweenLite.to(wire, 1, {top:300, rotation:-90, delay:0.1});
+	//	TweenLite.to(black_headphone_1, 0.3, {left:-98, delay:0, ease: Expo.easeOut});	
+
+		//TweenLite.to(wire, 1, {top:300, rotation:-90, delay:.1, ease: Expo.easeOut});
+
+
+
+
 
 		// slide in blur
-		TweenLite.to(black_headphone_blur, 0.3, {left:-98, delay:0.1,  ease: Expo.easeOut });
-		TweenLite.to(black_headphone_blur, 0.3, {opacity:1, left:-98, delay:0.1,  ease: Expo.easeOut });
-		//TweenLite.to(black_headphone_3, 0.3, {opacity:1, left:-98, delay:0.1,  ease: Expo.easeOut });
+		//TweenLite.to(black_headphone_blur, 0.3, {left:-98, delay:0,  ease: Expo.easeOut });
+		//TweenLite.to(black_headphone_blur, 0.3, {opacity:1, delay:0.1,  ease: Expo.easeOut });
 
 
 		// Flip 
-		TweenLite.to(black_headphone_blur, 1, {left:-153, delay:0.2, ease: Expo.easeOut });	
-
-		//TweenLite.to(black_headphone_2, 1, {rotationY:180, left:0, delay:0.2, ease: Expo.easeOut });	
-		//TweenLite.to(black_headphone_3, 1, {rotationY:180, opacity:1, left:0, delay:0.2, ease: Expo.easeOut });	
-
-
-		TweenLite.to(black_headphone_1, 1, {rotationY:180, left:0, delay:0.2, ease: Expo.easeOut });	
-
-		TweenLite.to(black_headphone_blur, 0.2, {opacity:0, delay:0.3 });
-		//TweenLite.to(black_headphone_3, 0.3, {opacity:0, delay:0.4 });
-		//TweenLite.to(black_headphone_1, 0, {opacity:0, delay:0.2, overwrite:"none"});
+		
+		//TweenLite.to(black_headphone_1, 1, {rotationY:180, left:0, delay:0.1, ease: Expo.easeOut });	
+		/*TweenLite.to(black_headphone_blur, 1, {opacity:1, rotationY:180, left:0, delay:0.2, ease: Expo.easeOut });	
+		TweenLite.to(black_headphone_blur2, 1, {opacity:1, left:0, delay:0.3, ease: Expo.easeOut });	
 
 
+		TweenLite.to(black_headphone_blur, 0.2, {opacity:0, delay:0.4 });
+		TweenLite.to(black_headphone_blur2, 0.2, {opacity:0, delay:0.4 });
 
-		//TweenLite.delayedCall(3.6, frame2);
+		TweenLite.delayedCall(0.7, frame2);
+		*/
 	}
 	
 	function frame2()
 	{
 
+		TweenLite.to(intro_text, 0.4, {opacity:1, delay:0 });
+		TweenLite.to(jbl_logos, 0.3, {opacity:1, delay:0 });
+		TweenLite.to(everest_text, 0.3, {opacity:1, delay:0.1 });
+		TweenLite.to(headphone_text, 0.4, {opacity:1, delay:1.4 });
 
+
+   // == show text ==
+   var i;
+    for (i = 1; i < 13; i++) {
+      var j = i+2
+
+      		TweenLite.to("wireless_text_"+i, .2, {opacity:1, delay: .1*i, ease: Expo.easeOut});
+
+    	}
+
+
+   var x;
+    for (x = 1; x < 12; x++) {
+      var j = x+2
+
+     		TweenLite.to("wireless_text_"+x, .2, {opacity:0, delay: .1*j, ease: Expo.easeOut});
+
+    	}
 	
-		TweenLite.delayedCall(0.2, frame3);	
+		TweenLite.delayedCall(3.5, frame3);	
 
 	}
 	
 	function frame3()
 	{	
+		TweenLite.to(whileless_holder, 0.3, {opacity:0, delay:0 });
+		TweenLite.to(intro_text, 0.3, {opacity:0, delay:0 });
+		TweenLite.to(everest_text, 0.3, {opacity:0, delay:0 });
+		TweenLite.to(headphone_text, 0.3, {opacity:0, delay:0 });
 
 
 		TweenLite.delayedCall(3, frame4);	
