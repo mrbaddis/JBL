@@ -43,7 +43,7 @@ home_animation = (function() {
 				Enabler.exit("clickTag1");
 			});
 
-		TweenLite.to(black_headphone_blur_right, 0, {left:-68});
+		TweenLite.to(black_headphone_blur_right, 0, {left:-100});
 
 		frame1();
 
@@ -57,21 +57,24 @@ home_animation = (function() {
 		TweenLite.to(black_headphone_1, 0.8, {left:-68, delay:0, ease: Expo.easeOut});
 		//wire slides in	
 		TweenLite.to(wire, 0.8, {left:-45, delay:0, ease: Expo.easeOut});
+		//headphone moves left while rotating
 		//left: -100 helps the leftward blur effect during the rotation
-		TweenLite.to(black_headphone_1, .3, {left:-100,opacity:0, delay:1, ease: Expo.easeIn});
+		TweenLite.to(black_headphone_1, .4, {left:-35,opacity:0, delay:1, ease: Expo.easeIn});
 		//headphones rotate
-		TweenLite.to(black_headphone_1, 2, {rotationY:180, delay:1.2, ease: Expo.easeOut});
+		TweenLite.to(black_headphone_1, 1.5, {rotationY:180, delay:1.2, ease: Expo.easeOut});
+
 		//blur image fades in
-		TweenLite.to(black_headphone_blur_right, 1, {opacity:1, delay:1.2, ease: Expo.easeOut});	
-		// TweenLite.to(black_headphone_1, 0, {left:-75, delay:1.2, ease: Expo.easeOut});	
-		
+		TweenLite.to(black_headphone_1, .5, {left:-8, opacity:0 ,delay:2, ease: Expo.easeOut});
+		TweenLite.to(black_headphone_blur_right, .4, {left:-150,opacity:1, delay:1.3, ease: Expo.easeOut});	
+			
 		//wire falls off
 		TweenLite.to(wire, 4.5, {top:300, left:350, rotationY:180, delay:1.2});	
 
 		//blur fades out
-		TweenLite.to(black_headphone_blur_right, .4, {opacity:0, delay:1.3});	
+		// TweenLite.to(black_headphone_blur_right, .0, {left:-60, delay:1.4});
+		TweenLite.to(black_headphone_blur_right, .7, {opacity:0, delay:1.4});
 		//headphones in final position
-		TweenLite.to(black_headphone_left, .1, {opacity:1, delay:1.3});	
+		TweenLite.to(black_headphone_left, .2, {opacity:1, delay:1.3});	
 
 
 		TweenLite.delayedCall(2, frame2);
