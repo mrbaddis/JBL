@@ -53,6 +53,7 @@ home_animation = (function() {
 		
 	function frame1()
 	{
+<<<<<<< Updated upstream:BN_BB/v2/300x250/Animation.js
 		//headphone slides in
 		TweenLite.to(black_headphone_1, 0.8, {left:-68, delay:0, ease: Expo.easeOut});
 		//wire slides in	
@@ -75,6 +76,20 @@ home_animation = (function() {
 		TweenLite.to(black_headphone_blur_right, .7, {opacity:0, delay:1.4});
 		//headphones in final position
 		TweenLite.to(black_headphone_left, .2, {opacity:1, delay:1.3});	
+=======
+
+		//-- Headphone flip --
+		TweenLite.to(black_headphone_1, 0.8, {left:-28, delay:0, ease: Expo.easeOut});	
+		TweenLite.to(wire, 0.8, {left:-7, delay:0, ease: Expo.easeOut});	
+
+		TweenLite.to(black_headphone_1, 0.8, {rotationY:180, opacity:0, left:0, delay:1.2, ease: Expo.easeOut});	
+		TweenLite.to(black_headphone_blur_right, 0.7, {opacity:1, left:-137, delay:1.2, ease: Expo.easeOut});	
+
+		TweenLite.to(wire, 4, {top:300, left:350, rotationY:180, delay:1.2});	
+
+		TweenLite.to(black_headphone_blur_right, 0.1, {opacity:0, delay:1.3});	
+		TweenLite.to(black_headphone_left, 0.1, {opacity:1, delay:1.3});	
+>>>>>>> Stashed changes:BN_BB/v2/LM_BB/300x250/Animation.js
 
 
 		TweenLite.delayedCall(2, frame2);
@@ -138,6 +153,8 @@ home_animation = (function() {
 
 	function frame5()
 	{	
+		TweenLite.to(jbl_logos, 0.3, {opacity:0, delay:0 });
+
 		TweenLite.to(for_music_text, 0.3, {opacity:0, delay:0});
 		TweenLite.to(jbl_everest_logo, 0.8, {left:0, opacity:1, delay:0.2 });
 		TweenLite.to(learnMore, 0.8, {left:0, opacity:1, delay:0.5 });
