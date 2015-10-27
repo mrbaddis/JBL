@@ -60,7 +60,7 @@ home_animation = (function() {
 		//headphone moves left while rotating
 
 		//left: -100 helps the leftward blur effect during the rotation
-		TweenLite.to(black_headphone_1, .4, {left:-35,opacity:0, delay:1, ease: Expo.easeOut});
+		TweenLite.to(black_headphone_1, .4, {left:-35,opacity:0, delay:1, ease: Expo.easeIn});
 		//headphones rotate
 		TweenLite.to(black_headphone_1, 2.5, {rotationY:180, delay:1.2, ease: Expo.easeOut});
 
