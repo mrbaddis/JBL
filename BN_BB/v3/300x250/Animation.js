@@ -128,8 +128,7 @@ home_animation = (function() {
 
 
 		TweenLite.to(for_music_text, 0.3, {opacity:1, delay:0.2});
-		TweenLite.to(black_headphone_left, 1, {left:-300, delay:0 });
-		TweenLite.to(white_headphone, 0.8, {left:0, opacity:1, delay:0.2 });
+		
 
 		
 		TweenLite.delayedCall(2.6, frame5);	
@@ -138,6 +137,8 @@ home_animation = (function() {
 
 	function frame5()
 	{	
+		TweenLite.to(black_headphone_left, 1, {left:-300, delay:0 });
+		TweenLite.to(white_headphone, 0.8, {left:0, opacity:1});
 		TweenLite.to(jbl_logos, 0.3, {opacity:0, delay:0});
 		TweenLite.to(for_music_text, 0.3, {opacity:0, delay:0});
 		TweenLite.to(jbl_everest_logo, 0.8, {left:0, opacity:1, delay:0.2 });
