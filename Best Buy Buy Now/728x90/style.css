@@ -1,0 +1,110 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#container {
+	position: absolute;
+	width: 728px;
+	height: 90px;
+	border:solid;
+	border-color:#58585a;
+	border-width:1px;
+	overflow:hidden;
+	background-color: #e1e1e1;
+	display: none;
+	z-index:0;
+	cursor:pointer;
+}
+
+body{
+	margin: 0px;
+}
+
+#textHolder {
+position: absolute;	
+top: -56px;
+left: 350px;	
+}
+#intro_text{
+	left: 25px;
+}
+#jbl_logos {
+	top: -171px;
+	opacity: 1;
+	left: -50px;
+}
+#cta_bottom_rollover{
+	top: -171px;
+	left:-50px;
+}
+
+#wire {
+position: absolute;	
+left: 728px;
+top: -15px;
+z-index:-1;
+}
+
+#headPhoneHolder {
+position: absolute;	
+top: -97px;
+}
+
+
+.position {
+position: absolute;
+left:0px;
+
+}
+
+.hide {
+position: absolute;
+	opacity: 0;
+	left:0px;
+}
+
+#black_headphone_1 {
+position: absolute;	
+left:728px;
+}
+
+#black_headphone_blur_left {
+	left:460px;
+}
+#for_music_text{
+	top: -69px;
+	left: 350px;
+}
+
+#wireless_holder {
+    position: absolute;
+    top: -6px;
+    left: 0px;
+}
+#headphone_text{
+	top: -8px;
+}
+#learnMore{
+	left: 16px;
+	top: -8px;
+}
+#learnMore_over{
+	left: 15px;
+	top: -8px;
+}
+#cta_bottom_rollover{
+	top: -170px;
+	left: -50px;
+}
+#bestbuy_logo{
+	left: -124px;
+	top: -48px;
+}
+
+#white_headphone {
+	position: absolute;
+	left:-300px;
+	top:-94px;
+}
+#black_headphone_left{
+	left: 220px;
+}
