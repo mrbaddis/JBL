@@ -141,7 +141,7 @@ home_animation = (function() {
 		TweenLite.to(for_music_text, 0.3, {opacity:0, delay:0});
 		TweenLite.to(jbl_everest_logo, 0.8, {left:0, opacity:1, delay:0.2 });
 		TweenLite.to(learnMore, 0.8, {left:0, opacity:1, delay:0.5 });
-		TweenLite.to(bestbuy_logo, 0.8, {left:0, opacity:1, delay:0.8 });
+		// TweenLite.to(bestbuy_logo, 0.8, {left:0, opacity:1, delay:0.8 });
 		TweenLite.to(cta_bottom_rollover, 0.2, {opacity:0});
 		endFrame = 1;
 		
